@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "open sans";
+}
+/* REGOLE HEADER */
+header {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    /* DEBUG */
+    background-color: lightgray;
+}
+#second-header {
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+.black-font{
+    color: black;
+    font-size: 14px;
+}
+#nav, #info {
+    display: flex;
+    gap: 40px;
+}
