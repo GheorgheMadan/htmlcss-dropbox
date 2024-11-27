@@ -25,12 +25,17 @@ header {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding: 10px;
 }
 #inizia {
+    display: inline;
     background-color: rgb(18, 101, 253);
     color: white;
     font-size: 14px;
     padding: 5px 15px;
+}
+#pulsante-inizia {
+    margin-top: 17px;
 }
 
 a {
@@ -52,7 +57,7 @@ a {
     display: flex;
     align-items: end;
     background-color: rgb(165, 213, 245);
-    height: 730px;
+    height: 860px;
 }
 #container-jumbotron {
     display: flex;
@@ -62,8 +67,9 @@ a {
 }
 #title {
     width: 100%;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 78px;
+
     /* DEBUG */
     /* background-color: blueviolet;
     height: 160px; */
@@ -72,20 +78,39 @@ a {
     display: flex;
     width: 100%;
     /* DEBUG */
-    background-color: rgb(226, 223, 43);
-    height: 400px;
+    /* background-color: rgb(226, 223, 43);
+    height: 400px; */
 }
 #text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 30%;
-    /* DEBUG */
+    padding-top: 40px;
+    /* DEBUG
     background-color: brown;
-    height: 400px;
+    height: 400px; */
+}
+.button {
+    background-color: rgb(18, 101, 253);
+    padding: 7px 15px;
+    color: white;
+}
+#arrow {
+    font-size: 80px;
+    font-weight: 900;
+    padding-bottom: 20px;
 }
 #img {
     width: 70%;
     /* DEBUG */
-    background-color: gray;
-    height: 400px;
+    /* background-color: gray;
+    height: 400px; */
+}
+#img-jumbo {
+    width: 800px;
+    padding-top: 40px;
+    z-index: 30;
 }
 
 /* REGOLE MAIN */
