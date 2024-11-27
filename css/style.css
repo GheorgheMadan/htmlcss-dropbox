@@ -5,12 +5,15 @@
     font-family: "open sans";
 }
 /* REGOLE HEADER */
+header {
+    margin-bottom: 200px;
+}
 #container-header {
     display: flex;
     align-items: center;
     height: 80px;
     /* DEBUG */
-    background-color: lightgray;
+    /* background-color: rgba(255, 255, 255, 0.993); */
 }
 #first-header {
     width: 98%;
@@ -69,4 +72,76 @@ a {
     background-color: gray;
     height: 400px;
 }
+
+/* REGOLE MAIN */
+main {
+    width: 62%;
+    margin: 0 auto;
+}
+/* PRIMA PAGINA */
+.first-column {
+    margin-bottom: 50px;
+}
+#container-firspage {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.title-section {
+    width: 100%;
+    /* DEBUG */
+    background-color: aqua;
+    height: 200px;
+}
+.columns-container {
+    width: 100%;
+    /* DEBUG */
+    background-color: beige;
+    height: 1200px;
+}
+/*  */
+.columns-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.description-section {
+    width: 30%;
+    border: 1px dashed black;
+    /* DEBUG */
+    background-color: aquamarine;
+    height: 1200px;
+}
+.second-column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+.title-team {
+    display: flex;
+    width: 100%;
+    /* DEBUG */
+    background-color: aqua;
+    height: 35px;
+}
+#content-column {
+    display: flex;
+}
+.big-section {
+    width: 70%;
+    border: 1 solid black;
+    /* DEBUG */
+    height: 300px;
+    background-color: rgb(205, 168, 240);
+}
+.small-section {
+    width: 30%;
+    border: 1 solid black;
+    /* DEBUG */
+    height: 300px;
+    background-color: rgb(91, 67, 114);
+}
+
+
+
 
