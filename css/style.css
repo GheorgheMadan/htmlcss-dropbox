@@ -9,9 +9,14 @@ header {
     margin-bottom: 200px;
 }
 #container-header {
+    width: 100%;
     display: flex;
     align-items: center;
     height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 400;
+    background-color: white;
     /* DEBUG */
     /* background-color: rgba(255, 255, 255, 0.993); */
 }
@@ -21,6 +26,12 @@ header {
     display: flex;
     justify-content: space-between;
 }
+#inizia {
+    background-color: rgb(18, 101, 253);
+    color: white;
+    font-size: 14px;
+    padding: 5px 15px;
+}
 
 a {
     text-decoration: none;
@@ -28,10 +39,12 @@ a {
 .black-font{
     color: black;
     font-size: 14px;
+    background-color: white;
+    padding: 20px 10px;
 }
 #nav, #info {
     display: flex;
-    gap: 40px;
+    gap: 10px;
 }
 
 /* REGOLE JUMBO */
@@ -39,19 +52,21 @@ a {
     display: flex;
     align-items: end;
     background-color: rgb(165, 213, 245);
-    height: 670px;
+    height: 730px;
 }
 #container-jumbotron {
     display: flex;
     flex-direction: column;
-    width: 78%;
+    width: 67%;
     margin: 0 auto;
 }
 #title {
     width: 100%;
+    font-weight: bold;
+    font-size: 78px;
     /* DEBUG */
-    background-color: blueviolet;
-    height: 160px;
+    /* background-color: blueviolet;
+    height: 160px; */
 }
 #description {
     display: flex;
