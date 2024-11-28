@@ -12,7 +12,7 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-    height: 80px;
+    height: 63px;
     position: fixed;
     top: 0;
     z-index: 400;
@@ -27,25 +27,24 @@ header {
     justify-content: space-between;
     padding: 10px;
 }
-#inizia {
-    display: inline;
-    background-color: rgb(18, 101, 253);
-    color: white;
-    font-size: 14px;
-    padding: 5px 15px;
+.logo {
+    padding-top: 20px;
 }
-#pulsante-inizia {
-    margin-top: 17px;
+.li-nav {
+    list-style-type: none;
 }
-
-a {
+/* a {
     text-decoration: none;
-}
+} */
 .black-font{
     color: black;
     font-size: 14px;
     background-color: white;
     padding: 20px 10px;
+    text-decoration: none;
+}
+.black-font:hover {
+    border-bottom: 2px solid gray;
 }
 #nav, #info {
     display: flex;
@@ -55,9 +54,9 @@ a {
 /* REGOLE JUMBO */
 #bg-jumbotron {
     display: flex;
-    align-items: end;
-    background-color: rgb(165, 213, 245);
-    height: 860px;
+    align-items: center;
+    background-color: rgb(163, 202, 228);
+    height: 820px;
 }
 #container-jumbotron {
     display: flex;
@@ -66,10 +65,10 @@ a {
     margin: 0 auto;
 }
 #title {
+    padding-top: 210px;
     width: 100%;
     font-weight: 900;
     font-size: 78px;
-
     /* DEBUG */
     /* background-color: blueviolet;
     height: 160px; */
@@ -87,33 +86,64 @@ a {
     justify-content: space-between;
     width: 30%;
     padding-top: 40px;
+    position: relative;
     /* DEBUG
     background-color: brown;
     height: 400px; */
 }
+.testo {
+    position: absolute;
+    left: 0;
+}
+.button-position {
+    position: absolute;
+    left: 0px;
+    top: 205px;
+}
 .button {
+    font-size: 14px;
     background-color: rgb(18, 101, 253);
     padding: 7px 15px;
     color: white;
+    text-decoration: none; 
+}
+.bg-hover:hover {
+    display: block;
+    background-color: rgba(74, 118, 199, 0.5);
+}
+#annulla {
+    position: absolute;
+    left: 0px;
+    top: 270px;
 }
 #arrow {
-    font-size: 80px;
+    color: black;
+    font-size: 60px;
     font-weight: 900;
     padding-bottom: 20px;
+    padding-top: 40px;
+    position: absolute;
+    left: 0;
+    bottom: 80px;
 }
 #img {
     width: 70%;
+    /* position: relative; */
     /* DEBUG */
     /* background-color: gray;
     height: 400px; */
 }
 #img-jumbo {
-    width: 800px;
+    width: 920px;
     padding-top: 40px;
+    /* position: absolute; */
     z-index: 30;
 }
 
 /* REGOLE MAIN */
+hr {
+    color: lightgray;
+}
 main {
     width: 62%;
     margin: 0 auto;
@@ -128,16 +158,84 @@ main {
     gap: 30px;
 }
 .title-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     width: 100%;
     /* DEBUG */
-    background-color: aqua;
-    height: 200px;
+    /* background-color: aqua;
+    height: 200px; */
+}
+#container-radio {
+    display: flex;
+    gap: 40px;
 }
 .columns-container {
     width: 100%;
+    margin-top: 10px;
     /* DEBUG */
-    background-color: rgb(255, 255, 40);
-    height: 1200px;
+    /* background-color: rgb(255, 255, 40);
+    height: 1200px; */
+}
+.contenitore-piani{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(190, 190, 190);
+    padding: 10px 30px;
+}
+
+/* contenuto di ogni colonna */
+.title-list {
+    padding: 25px 18px;
+}
+h1 {
+    font-size: 31px;
+    margin-bottom: 18px;
+}
+.price {
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+.period {
+    color: rgb(190, 190, 190);
+}
+.container-list {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding: 40px 5px;
+}
+li .user, .folder, .sharing {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+.sharing1 {
+    margin-bottom: 40px;
+}
+.sharing2 {
+    margin-bottom: 20px;
+}
+li {
+    list-style: none;
+}
+.container-button {
+    display: flex;
+    justify-content: center;
+}
+.button2 {
+    padding: 10px 24%;
+}
+.button3 {
+    padding: 10px 40%;
+}
+.container-buynow {
+    margin-top: 30px;
+}
+.border {
+    border-bottom: 2px solid rgb(190, 190, 190);
+    width: 18%;
+    padding-bottom: 40px;
 }
 /*  */
 .columns-container {
@@ -147,39 +245,71 @@ main {
 }
 .description-section {
     width: 30%;
-    border: 1px dashed black;
+    border: 1px solid rgb(190, 190, 190);
     /* DEBUG */
-    background-color: aquamarine;
-    height: 1200px;
+    /* background-color: aquamarine;
+    height: 1200px; */
 }
 .second-column {
     display: flex;
     flex-direction: column;
     margin-bottom: 200px;
 }
+/* inizio secona lista */
+.container-list2 {
+    margin-top: 50px;
+}
+.fa-check {
+    color: rgb(18, 101, 253);
+    font-weight: 900;
+}
+.li-flex {
+    display: flex;
+    gap: 5px;
+}
+/* fine secondo elenco */
+
 .title-team {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
     /* DEBUG */
-    background-color: aqua;
-    height: 35px;
+    /* background-color: aqua;
+    height: 35px; */
 }
 #content-column {
     display: flex;
+    border: 1px solid rgb(190, 190, 190);
 }
 .big-section {
-    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 40px 35px;
+    width: 69%;
     border: 1 solid black;
     /* DEBUG */
-    height: 300px;
-    background-color: rgb(205, 168, 240);
+    /* height: 300px;
+    background-color: rgb(205, 168, 240); */
 }
 .small-section {
-    width: 30%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 31%;
     border: 1 solid black;
     /* DEBUG */
-    height: 300px;
-    background-color: rgb(91, 67, 114);
+    /* height: 300px;
+    background-color: rgb(91, 67, 114); */
+}
+.button-vendite {
+    width: 50%;
+    color: white;
+    background-color: rgb(18, 101, 253);
+    text-decoration: none;
 }
 /* INIZIO SECONDA PAGINA */
 #media-section {

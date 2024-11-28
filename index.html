@@ -15,18 +15,18 @@
      <header>
         <section id="container-header">
             <nav id="first-header">
-                <section id="nav">
-                    <a href="#" class="black-font"><img src="./img/logo-small.png" alt=""></a>
-                    <a href="#" class="black-font">Perch&egrave; Dropbox</a>
-                    <a href="#" class="black-font">Funzioni</a>
-                    <a href="#" class="black-font">Piani e Prezzi</a>
-                </section>
-                <section id="info">
-                    <a href="#" class="black-font">Supporto</a>
-                    <a href="#" class="black-font">Contatta l'ufficio vendite</a>
-                    <a href="#" class="black-font">Accedi</a>
-                    <div id="pulsante-inizia"><a href="#" id="inizia">Inizia</a></div>
-                </section>
+                <ul id="nav">
+                    <li class="li-nav"><a href="#" class="logo"><img src="./img/logo-small.png" alt=""></a></li>
+                    <li class="li-nav"><a href="#" class="black-font">Perch&egrave; Dropbox</a></li>
+                    <li class="li-nav"><a href="#" class="black-font">Funzioni</a></li>
+                    <li class="li-nav"><a href="#" class="black-font">Piani e Prezzi</a></li>
+                </ul>
+                <ul id="info">
+                    <li class="li-nav"><a href="#" class="black-font">Supporto</a></li>
+                    <li class="li-nav"><a href="#" class="black-font">Contatta l'ufficio vendite</a></li>
+                    <li class="li-nav"><a href="#" class="black-font">Accedi</a></li>
+                    <li class="li-nav"><a href="#" class="button bg-hover">Inizia</a></li> 
+                </ul>
             </nav>
         </section>
         <div id="bg-jumbotron">
@@ -36,14 +36,14 @@
                 </div>
                 <div id="description">
                     <section id="text">
-                        <span>
+                        <span id="testo">
                             Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.
                         </span>
                         <div>
-                            <a href="#" class="button">Inizia la tua prova gratuita</a>
+                            <a href="#" class="button-position bg-hover button">Inizia la tua prova gratuita</a>
                         </div>
-                        <span>Annulla in qualsiasi momento</span>
-                        <a href="#" id="arrow">&darr;</a>
+                        <span id="annulla">Annulla in qualsiasi momento</span>
+                        <a href="#" id="arrow"><i class="fa-solid fa-arrow-down"></i></a>
                     </section>
                     <section id="img">
                         <img src="./img/jumbo.png" alt="" id="img-jumbo">
@@ -54,22 +54,117 @@
      </header>
 
      <!-- inizio main-->
+      <hr>
       <main>
         <section class="first-column">
             <div id="container-firspage">
-                <div class="title-section"></div>
+                <div class="title-section">
+                    <h1 class="titolo-pagina">Trova il piano business che fa per te</h1>
+                    <div id="container-radio">
+                        <span><input type="radio">Fatturazione mensile</span> 
+                        <span><input type="radio">Fatturazione annuale</span>
+                    </div>    
+                </div>
                 <div class="columns-container">
-                    <section class="description-section"></section>
-                    <section class="description-section"></section>
-                    <section class="description-section"></section>
+                    <section class="description-section">
+                        <div class="contenitore-piani">
+                            <span class="piani"><i class="fa-solid fa-user"></i> Singolo</span> 
+                        </div>
+                        <div class="title-list">
+                            <h1>Professional</h1>
+                            <div class="price">&euro; 12.00</div>
+                            <div class="period">/mese</div>
+                            <ul class="container-list">
+                                <li class="user"><i class="fa-solid fa-user"></i> <span>1 utente</span></li>
+                                <li class="folder"><i class="fa-solid fa-folder"></i><span>5 TB di spazio di archiviazione</span></li>
+                                <li class="sharing sharing1"><i class="fa-solid fa-share-nodes"></i><span>Funzioni di produttivit&agrave; premium e condivisione file semplice e sicura</span></li> 
+                            </ul>
+                            <div class="container-button"><a href="#" class="bg-hover button button2">Prova gratis per 30 giorni</a></div>
+                            <div class="container-buynow">oppure <a href="#" class="buynow">acquista ora</a></div>
+                            <div class="border"></div>
+                            <div class="container-list2">
+                                <h4>Punti Salienti del piano</h4>
+                                <ul class="container-list">
+                                    <li class="li-flex"><i class="fa-solid fa-check"></i><span>Invia file fino a 100 GB con Dropbox Transfert</span></li>
+                                    <li class="li-flex"><i class="fa-solid fa-check"></i><span>Cartelle offline su dispositivi mobili</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="description-section">
+                        <div class="contenitore-piani">
+                            <span class="piani"><i class="fa-solid fa-users"></i> Team</span> 
+                        </div>
+                        <div class="title-list">
+                            <h1>Advanced</h1>
+                            <div class="price">&euro; 18.00</div>
+                            <div class="period">/utente/mese</div>
+                            <ul class="container-list">
+                                <li class="user"><i class="fa-solid fa-users"></i> <span>3 o pi&ugrave; utenti</span></li>
+                                <li class="folder"><i class="fa-solid fa-folder"></i><span>Tutto lo spazio di cui ha bisogno il tuo team</span></li>
+                                <li class="sharing sharing2"><i class="fa-solid fa-share-nodes"></i><span>Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</span></li> 
+                            </ul>
+                            <div class="container-button"><a href="#" class="bg-hover button button2">Prova gratis per 30 giorni</a></div>
+                            <div class="container-buynow">oppure <a href="#" class="buynow">acquista ora</a></div>
+                            <div class="border"></div>
+                            <div class="container-list2">
+                                <h4>Punti Salienti del piano</h4>
+                                <ul class="container-list">
+                                    <li class="li-flex"><i class="fa-solid fa-check"></i><span>Nessun limite di spazio per i file</span></li>
+                                    <li class="li-flex"><i class="fa-solid fa-check"></i><span>Catelle offline su dispositivi mobili</span></li>
+                                    <li class="li-flex"><i class="fa-solid fa-check"></i><span>Risparmio del 50% rispetto alle iscrizione singole</span></li>
+                                    <li class="li-flex"><i class="fa-solid fa-check"></i><span>Possibilit&agrave; di inserire nuovi membri del team</span></li>
+                                    <li class="li-flex"><i class="fa-solid fa-check"></i><span>Gestione dei permessi in base ai ruoli</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="description-section">
+                        <div class="contenitore-piani">
+                            <span class="piani"><i class="fa-solid fa-building"></i> Azienda</span> 
+                        </div>
+                        <div class="title-list">
+                            <h1>Enterprise</h1>
+                            <div class="price">Contattaci</div>
+                            <div class="period">-</div>
+                            <ul class="container-list">
+                                <li class="user"><i class="fa-solid fa-user"></i> <span>10 o pi&ugrave; utenti</span></li>
+                                <li class="folder"><i class="fa-solid fa-folder"></i><span>Soluzioni personalizzabili per la tua azienda</span></li>
+                                <li class="sharing"><i class="fa-solid fa-share-nodes"></i><span>Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</span></li> 
+                            </ul>
+                            <div class="container-button"><a href="#" class="bg-hover button button3">Contattaci</a></div>
+                            <div class="container-buynow">oppure <a href="#" class="buynow">acquista ora</a></div>
+                            <div class="border"></div>
+                            <div class="container-list2">
+                                <h4>Punti Salienti del piano</h4>
+                                <ul class="container-list">
+                                    <li class="li-flex"><i class="fa-solid fa-check"></i><span>Cartelle offline</span></li>
+                                    <li class="li-flex"><i class="fa-solid fa-check"></i><span>Servizio assistenza 24/h</span></li>
+                                    <li class="li-flex"><i class="fa-solid fa-check"></i><span>Possibilit&agrave; di personalizzazione totale</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>    
         </section>
         <section class="second-column">   
-            <div class="title-team"></div>
+            <div class="title-team">
+                <span><i class="fa-solid fa-building"></i>Team</span>
+            </div>
             <div id="content-column">
-                <section class="big-section"></section>
-                <section class="small-section"></section>
+                <section class="big-section">
+                    <div>
+                        <h1>Enterprise</h1>
+                        <span><strong>Contatta l'ufficio vendite per i prezzi</strong></span>
+                    </div>
+                    <div>
+                        Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.
+                    </div>
+                </section>
+                <section class="small-section">
+                    <a href="#" class="button-vendite bg-hover">Contatta l'ufficio vendite</a> 
+                </section>
             </div>
          </section>    
         <section id="fine-pagina">
