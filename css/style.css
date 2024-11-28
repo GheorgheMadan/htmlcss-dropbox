@@ -108,7 +108,6 @@ header {
     text-decoration: none; 
 }
 .bg-hover:hover {
-    display: block;
     background-color: rgba(74, 118, 199, 0.5);
 }
 #annulla {
@@ -145,7 +144,7 @@ hr {
     color: lightgray;
 }
 main {
-    width: 62%;
+    width: 50%;
     margin: 0 auto;
 }
 /* PRIMA PAGINA */
@@ -224,7 +223,7 @@ li {
     justify-content: center;
 }
 .button2 {
-    padding: 10px 24%;
+    padding: 10px 20%;
 }
 .button3 {
     padding: 10px 40%;
@@ -317,22 +316,44 @@ li {
 }
 
 #img-container {
-    width: 60%;
+    width: 68%;
     /* DEBUG */
-    border: 1px solid black;
+    /* border: 1px solid black;
     background-color: rgb(107, 148, 187);
-    height: 500px;
+    height: 500px; */
 }
 #img-partner {
     width: 100%;
+    height: 100%;
 }
 
 #text-container {
-    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 50px 10px;
+    width: 27%;
     /* DEBUG */
+    /* border: 1px solid black; */
+    /* background-color: rgb(122, 223, 119);
+    height: 500px; */
+}
+#titolo2 {
+    font-size: 20px;
+}
+#text1 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.white-button {
+    color: black;
+    background-color: white;
     border: 1px solid black;
-    background-color: rgb(122, 223, 119);
-    height: 500px;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.bg-hoverwhite:hover {
+    background-color: rgb(143, 142, 142, 0.50)
 }
 #fine-pagina {
     margin-bottom: 150px;
@@ -355,61 +376,96 @@ li {
     height: 400px; */
 }
 #dropbox-business {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
     width: 100%;
     /* DEBUG */
-    background-color: rgb(132, 214, 187);
+    /* background-color: rgb(132, 214, 187);
     height: 60px;
-    border: 1px solid black;
+    border: 1px solid black; */
 }
 
 .articolo {
-    width: 31%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 30%;
     /* DEBUG */
-    background-color: rgb(136, 93, 177);
+    /* background-color: rgb(136, 93, 177);
     border: 1px solid black;
-    height: 400px;
+    height: 400px; */
+}
+.img6 {
+    width: 100%;
+}
+.titlesize {
+    font-size: 25px;
 }
 .page-space {
     margin-bottom: 220px;
 }
 /* inizio ultima pagina */
 #last-page {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
     width: 100%;
     /* DEBUG */
-    border: 1px solid black;
+    /* border: 1px solid black;
     height: 300px;
-    background-color: gray;
+    background-color: gray; */
+}
+#ultimotitolo {
+ font-size: 55px;
 }
 /* FINE MAIN */
 /* REGOLE FOOTER */
 footer {
     background-color: black;
-    height: 456px;
+    /* height: 456px; */
 }
 #container-footer {
     display: flex;
-    width: 70%;
+    width: 67%;
     margin: 0 auto;
     padding-top: 65px;
 }
 .info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
     width: 20%;
     /* DEBUG */
-    background-color: rgb(255, 56, 56);
+    /* background-color: rgb(255, 56, 56);
     border: 1px dashed white;
-    height: 250px;
+    height: 250px; */
+}
+h6 {
+    font-size: 25px;
+}
+.contenitorelista {
+    line-height: 30px;
+    font-size: 15px;
 }
 
 #container-language {
     display: flex;
-    width: 70%;
+    width: 67%;
     margin: 0 auto;
     padding-top: 60px;
 }
 #language {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     width: 10%;
     border-top: 2px solid white;
+    color: white;
+    font-size: 15px;
     /* DEBUG */
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     height: 80px;
 }
