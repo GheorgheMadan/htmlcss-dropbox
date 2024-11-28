@@ -298,18 +298,16 @@ li {
 .small-section {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 50px 10px;
     width: 31%;
     border: 1 solid black;
     /* DEBUG */
     /* height: 300px;
     background-color: rgb(91, 67, 114); */
 }
-.button-vendite {
-    width: 50%;
-    color: white;
-    background-color: rgb(18, 101, 253);
-    text-decoration: none;
+#buttonsalses {
+    font-size: 15px;
+    padding: 8px 30px;
 }
 /* INIZIO SECONDA PAGINA */
 #media-section {
@@ -324,6 +322,9 @@ li {
     border: 1px solid black;
     background-color: rgb(107, 148, 187);
     height: 500px;
+}
+#img-partner {
+    width: 100%;
 }
 
 #text-container {
