@@ -140,8 +140,9 @@ header {
 }
 
 /* REGOLE MAIN */
-hr {
-    color: lightgray;
+#border {
+    border: 1px solid  rgb(235, 235, 235);
+    margin-bottom: 55px;
 }
 main {
     width: 50%;
@@ -184,7 +185,7 @@ main {
 }
 
 /* contenuto di ogni colonna */
-.title-list {
+.regole-list {
     padding: 25px 18px;
 }
 h1 {
@@ -209,24 +210,12 @@ li .user, .folder, .sharing {
     list-style: none;
     gap: 10px;
 }
-.sharing1 {
-    margin-bottom: 40px;
-}
-.sharing2 {
-    margin-bottom: 20px;
-}
 li {
     list-style: none;
 }
 .container-button {
     display: flex;
     justify-content: center;
-}
-.button2 {
-    padding: 10px 20%;
-}
-.button3 {
-    padding: 10px 40%;
 }
 .container-buynow {
     margin-top: 30px;
@@ -243,7 +232,7 @@ li {
     justify-content: space-between;
 }
 .description-section {
-    width: 30%;
+    width: 32%;
     border: 1px solid rgb(190, 190, 190);
     /* DEBUG */
     /* background-color: aquamarine;
