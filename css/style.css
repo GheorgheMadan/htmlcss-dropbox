@@ -83,23 +83,14 @@ header {
 #text {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 50px;
     width: 30%;
     padding-top: 40px;
-    position: relative;
     /* DEBUG
     background-color: brown;
     height: 400px; */
 }
-.testo {
-    position: absolute;
-    left: 0;
-}
-.button-position {
-    position: absolute;
-    left: 0px;
-    top: 205px;
-}
+
 .button {
     font-size: 14px;
     background-color: rgb(18, 101, 253);
@@ -110,18 +101,12 @@ header {
 .bg-hover:hover {
     background-color: rgba(74, 118, 199, 0.5);
 }
-#annulla {
-    position: absolute;
-    left: 0px;
-    top: 270px;
-}
 #arrow {
     color: black;
     font-size: 60px;
     font-weight: 900;
-    padding-bottom: 20px;
-    padding-top: 40px;
-    position: absolute;
+    padding-bottom: 0px;
+    padding-top: 0px;
     left: 0;
     bottom: 80px;
 }
@@ -203,7 +188,7 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 17px;
-    padding: 40px 5px;
+    padding: 20px 5px;
 }
 li .user, .folder, .sharing {
     display: flex;
